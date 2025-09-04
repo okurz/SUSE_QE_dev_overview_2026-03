@@ -4,24 +4,28 @@
 
 <small>
 
-* From [resolved tasks](https://progress.opensuse.org/issues?query_id=541), 530+ (from 500) tickets since last report:
- * Fair split among sub-teams: 50% *dev*, 50% *infra*
- * Full version control awareness within openQA [poo#58184](https://progress.opensuse.org/issues/58184)
- * SUSE deployment of Linux Endpoint Protection Agent [poo#173854](https://progress.opensuse.org/issues/173854)
- * Migration out of NUE3 [poo#175509](https://progress.opensuse.org/issues/175509)
-* Onboarding more members
-* [team collaboration ad video](https://www.youtube.com/shorts/Y5_LeNhGqk0)
+* From [resolved infra tasks](https://progress.opensuse.org/issues?set_filter=1&sort=priority%3Adesc%2Cid%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=%3D&v%5Bstatus_id%5D%5B%5D=3&f%5B%5D=fixed_version_id&op%5Bfixed_version_id%5D=%3D&v%5Bfixed_version_id%5D%5B%5D=418&f%5B%5D=closed_on&op%5Bclosed_on%5D=%3E%3D&v%5Bclosed_on%5D%5B%5D=2025-05-06&f%5B%5D=issue_tags&op%5Bissue_tags%5D=%3D&v%5Bissue_tags%5D%5B%5D=infra&f%5B%5D=&c%5B%5D=subject&c%5B%5D=project&c%5B%5D=priority&c%5B%5D=category&group_by=project&t%5B%5D=), 244 tickets since last report:
+ * Support CC-compliance of PRG2 while ensuring business continuity [poo#165282](https://progress.opensuse.org/issues/165282)
+ * Migration from racktables to netbox [poo#177537](https://progress.opensuse.org/issues/177537)
+ * Proper ownership and maintainership for .qa.suse.cz and .qam.suse.cz [poo#154042](https://progress.opensuse.org/issues/154042)
+ * The usual challenges with new machines as well as migrating machines
+* Squad rotation by okurz, good success with stand-in nsinger
 
 </small>
+
+---
 
 #### Important changes
 
 <small>
 
-* Successfully progressed with the team split proposal
- * original proposal: "To succeed with the roadmap+helping both internal+external customers extend the team by 4 FTEs and split into two"
+* CC-compliance brought significant changes with two important factors:
+ * The datacenters are used with strong reliance on PRG2 with no redundancy and NUE2 underused
+ * QE engineers need to handle adaptations though full awareness is still missing -> risk of non-compliance
 * From [monitor dashboard](https://monitor.qa.suse.de/):
- * Availability of OSD 96%, significant decrease (!)
+ * Availability of OSD 94%, further significant decrease (!) mostly due to two
+   incidents involving ill-configured bare-metal virtualization tests not sufficiently mitigated probably as
+   could be expected from already communicated impediments
 
 </small>
 
@@ -32,9 +36,8 @@
 <small>
 
 Improve the openQA experience benefitting biggest user groups while staying compliant as well as performant:
-* (old) openQA for SUSE customers [poo#127031](https://progress.opensuse.org/issues/127031)
-* (old) Support CC-compliance of PRG2 while ensuring business continuity [poo#165282](https://progress.opensuse.org/issues/165282)
-* Support switch to gitea for openSUSE/SUSE based products, e.g. SLE16 [poo#180626](https://progress.opensuse.org/issues/180626)
+* (old) Support switch to gitea for openSUSE/SUSE based products, e.g. SLE16 [poo#180626](https://progress.opensuse.org/issues/180626)
+* Support SUSE PRG office move while ensuring business continuity [poo#168895](https://progress.opensuse.org/issues/168895)
 
 See [QE tools team - backlog, top-level](https://progress.opensuse.org/issues?query_id=524) for reference
 
@@ -48,7 +51,7 @@ See [QE tools team - backlog, top-level](https://progress.opensuse.org/issues?qu
 
 <small>
 
-* Growing requirements on OSD – more products, more versions, more tests, more users - are straining team resources
+* Same as last time: Growing requirements on OSD – more products, more versions, more tests, more users - are straining team resources
 
 </small>
 
@@ -57,9 +60,7 @@ See [QE tools team - backlog, top-level](https://progress.opensuse.org/issues?qu
 
 <small>
 
-* Infrastructure administration ressources: Short term: ~~Rotation~~, long
-  term: Team extension
-* Hardware: Please don't give us more hardware :)
+* Infrastructure administration ressources: Team extension is getting more pressing especially considering availability and geo-redundancy (SLC1) requirements
 
 See https://progress.opensuse.org/projects/openqav3/wiki/#openQA-infrastructure-needs-o3-osd
 for reference
