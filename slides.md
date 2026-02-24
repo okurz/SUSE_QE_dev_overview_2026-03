@@ -4,12 +4,11 @@
 
 <small>
 
-* From [resolved infra tasks](https://progress.opensuse.org/issues?set_filter=1&sort=priority%3Adesc%2Cid%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=%3D&v%5Bstatus_id%5D%5B%5D=3&f%5B%5D=fixed_version_id&op%5Bfixed_version_id%5D=%3D&v%5Bfixed_version_id%5D%5B%5D=418&f%5B%5D=closed_on&op%5Bclosed_on%5D=%3E%3D&v%5Bclosed_on%5D%5B%5D=2025-05-06&f%5B%5D=issue_tags&op%5Bissue_tags%5D=%3D&v%5Bissue_tags%5D%5B%5D=infra&f%5B%5D=&c%5B%5D=subject&c%5B%5D=project&c%5B%5D=priority&c%5B%5D=category&group_by=project&t%5B%5D=), 244 tickets since last report:
- * Support CC-compliance of PRG2 while ensuring business continuity [poo#165282](https://progress.opensuse.org/issues/165282)
- * Migration from racktables to netbox [poo#177537](https://progress.opensuse.org/issues/177537)
- * Proper ownership and maintainership for .qa.suse.cz and .qam.suse.cz [poo#154042](https://progress.opensuse.org/issues/154042)
- * The usual challenges with new machines as well as migrating machines
-* Squad rotation by okurz, good success with stand-in nsinger
+* From [resolved infra tasks](https://progress.opensuse.org/issues?set_filter=1&sort=priority%3Adesc%2Cid&f%5B%5D=status_id&op%5Bstatus_id%5D=c&f%5B%5D=issue_tags&op%5Bissue_tags%5D=%3D&v%5Bissue_tags%5D%5B%5D=infra&f%5B%5D=closed_on&op%5Bclosed_on%5D=%3E%3D&v%5Bclosed_on%5D%5B%5D=2025-10-27&f%5B%5D=&c%5B%5D=subject&c%5B%5D=assigned_to&c%5B%5D=relations&c%5B%5D=priority&c%5B%5D=category&c%5B%5D=tags_relations&group_by=status&t%5B%5D=), 180 tickets since last report (-70):
+ * Reliable and resilient QE infrastructure management [poo#121732](https://progress.opensuse.org/issues/121732)
+ * Prepare more hardware in CC-compliant PRG2 as needed [poo#182735](https://progress.opensuse.org/issues/182735)
+ * Support the gitea-based SLE 16 Maintenance workflow [poo#190152](https://progress.opensuse.org/issues/190152)
+* Nice experience with recent squad rotations
 
 </small>
 
@@ -19,13 +18,12 @@
 
 <small>
 
-* CC-compliance brought significant changes with two important factors:
- * The datacenters are used with strong reliance on PRG2 with no redundancy and NUE2 underused
- * QE engineers need to handle adaptations though full awareness is still missing -> risk of non-compliance
+* Bot/AI/Scraper protection on o3
+* PRG1 was evacuated of LSG QE assets (exception of "DA" assets)
+* From last time, still valid: QE engineers need to handle adaptations though full awareness is still missing -> risk of non-compliance
 * From [monitor dashboard](https://monitor.qa.suse.de/):
- * Availability of OSD 94%, further significant decrease (!) mostly due to two
-   incidents involving ill-configured bare-metal virtualization tests not sufficiently mitigated probably as
-   could be expected from already communicated impediments
+ * Availability of OSD 96%, +2% since last time due to less disruptive changes
+   and better planning of resilient operations
 
 </small>
 
@@ -35,9 +33,12 @@
 
 <small>
 
-Improve the openQA experience benefitting biggest user groups while staying compliant as well as performant:
+Provide a stable QE testing infrastructure in an ever-changing environment while staying compliant as well as performant:
 * (old) Support switch to gitea for openSUSE/SUSE based products, e.g. SLE16 [poo#180626](https://progress.opensuse.org/issues/180626)
-* Support SUSE PRG office move while ensuring business continuity [poo#168895](https://progress.opensuse.org/issues/168895)
+* (old) Support SUSE PRG office move while ensuring business continuity [poo#168895](https://progress.opensuse.org/issues/168895)
+* Compliance related improvements in preparation of new 2026+ audits [poo#196265](https://progress.opensuse.org/issues/196265)
+* Upgrade infrastructure from Leap 15.6 [poo#180716](https://progress.opensuse.org/issues/180716)
+* openQA trigger+feedback on src.suse.de [poo#180629](https://progress.opensuse.org/issues/180629)
 
 See [QE tools team - backlog, top-level](https://progress.opensuse.org/issues?query_id=524) for reference
 
@@ -51,7 +52,7 @@ See [QE tools team - backlog, top-level](https://progress.opensuse.org/issues?qu
 
 <small>
 
-* Same as last time: Growing requirements on OSD – more products, more versions, more tests, more users - are straining team resources
+* We are good :)
 
 </small>
 
@@ -60,7 +61,7 @@ See [QE tools team - backlog, top-level](https://progress.opensuse.org/issues?qu
 
 <small>
 
-* Infrastructure administration ressources: Team extension is getting more pressing especially considering availability and geo-redundancy (SLC1) requirements
+* Infrastructure administration ressources: If we keep at least the current team size we will be ok although not able to cover geo-redundancy (SLC1) requirements
 
 See https://progress.opensuse.org/projects/openqav3/wiki/#openQA-infrastructure-needs-o3-osd
 for reference
