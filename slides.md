@@ -4,10 +4,12 @@
 
 <small>
 
-* From [resolved infra tasks](https://progress.opensuse.org/issues?set_filter=1&sort=priority%3Adesc%2Cid&f%5B%5D=status_id&op%5Bstatus_id%5D=c&f%5B%5D=issue_tags&op%5Bissue_tags%5D=%3D&v%5Bissue_tags%5D%5B%5D=infra&f%5B%5D=closed_on&op%5Bclosed_on%5D=%3E%3D&v%5Bclosed_on%5D%5B%5D=2025-10-27&f%5B%5D=&c%5B%5D=subject&c%5B%5D=assigned_to&c%5B%5D=relations&c%5B%5D=priority&c%5B%5D=category&c%5B%5D=tags_relations&group_by=status&t%5B%5D=), 180 tickets since last report (-70):
- * Reliable and resilient QE infrastructure management [poo#121732](https://progress.opensuse.org/issues/121732)
- * Prepare more hardware in CC-compliant PRG2 as needed [poo#182735](https://progress.opensuse.org/issues/182735)
- * Support the gitea-based SLE 16 Maintenance workflow [poo#190152](https://progress.opensuse.org/issues/190152)
+* From [resolved dev
+  tasks](https://progress.opensuse.org/issues?set_filter=1&sort=priority%3Adesc%2Cid%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=%3D&v%5Bstatus_id%5D%5B%5D=3&f%5B%5D=fixed_version_id&op%5Bfixed_version_id%5D=%3D&v%5Bfixed_version_id%5D%5B%5D=418&f%5B%5D=closed_on&op%5Bclosed_on%5D=%3E%3D&v%5Bclosed_on%5D%5B%5D=2025-09-30&f%5B%5D=issue_tags&op%5Bissue_tags%5D=%21&v%5Bissue_tags%5D%5B%5D=infra&f%5B%5D=&c%5B%5D=subject&c%5B%5D=project&c%5B%5D=priority&c%5B%5D=category&group_by=category&t%5B%5D=), 180 tickets since last report (+50):
+ * Secure handling of NPM dependencies [poo#189363](https://progress.opensuse.org/issues/189363)
+ * openQA makes spelling mistakes (or not anymore) [poo#43889](https://progress.opensuse.org/issues/43889)
+ * Support keeping only jobs in database [poo#179221](https://progress.opensuse.org/issues/179221)
+ * Throttle openQA test scenarios based on configured test parameters [poo#192952](https://progress.opensuse.org/issues/179221)
 * Nice experience with recent squad rotations
 
 </small>
@@ -18,12 +20,11 @@
 
 <small>
 
-* Bot/AI/Scraper protection on o3
-* PRG1 was evacuated of LSG QE assets (exception of "DA" assets)
-* From last time, still valid: QE engineers need to handle adaptations though full awareness is still missing -> risk of non-compliance
-* From [monitor dashboard](https://monitor.qa.suse.de/):
- * Availability of OSD 96%, +2% since last time due to less disruptive changes
-   and better planning of resilient operations
+* AI helps but also brings new challenges: Bot/AI/Scraper protection on o3
+* Uprise of security issues that need to be handled
+* Updated team description on
+  https://progress.opensuse.org/projects/qa/wiki/Tools#QE-tools-Team-description
+  with strategic focus and value proposition
 
 </small>
 
@@ -33,12 +34,10 @@
 
 <small>
 
-Provide a stable QE testing infrastructure in an ever-changing environment while staying compliant as well as performant:
+Provide a modern, efficient and secure QE toolset ready for the future:
 * (old) Support switch to gitea for openSUSE/SUSE based products, e.g. SLE16 [poo#180626](https://progress.opensuse.org/issues/180626)
-* (old) Support SUSE PRG office move while ensuring business continuity [poo#168895](https://progress.opensuse.org/issues/168895)
-* Compliance related improvements in preparation of new 2026+ audits [poo#196265](https://progress.opensuse.org/issues/196265)
-* Upgrade infrastructure from Leap 15.6 [poo#180716](https://progress.opensuse.org/issues/180716)
-* openQA trigger+feedback on src.suse.de [poo#180629](https://progress.opensuse.org/issues/180629)
+* Full traceability "paper trail" and test reproducibility of openQA tests [poo#173872](https://progress.opensuse.org/issues/173872)
+* AI integration with openQA [poo#159300](https://progress.opensuse.org/issues/159300)
 
 See [QE tools team - backlog, top-level](https://progress.opensuse.org/issues?query_id=524) for reference
 
@@ -61,7 +60,7 @@ See [QE tools team - backlog, top-level](https://progress.opensuse.org/issues?qu
 
 <small>
 
-* Infrastructure administration ressources: If we keep at least the current team size we will be ok although not able to cover geo-redundancy (SLC1) requirements
+* Team is a bit small but efficient
 
 See https://progress.opensuse.org/projects/openqav3/wiki/#openQA-infrastructure-needs-o3-osd
 for reference
